@@ -149,6 +149,35 @@ padding-right: 1.8em;
 	-ms-transition: 0.5s all;
 }
 
+.tsrness h4 a {
+    color: #fff;
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: 400;
+    display: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #fff;
+    width: 15%;
+    padding: 0.7em;
+	background: #000;
+    margin: 2em auto;
+	font-family: 'Nunito', sans-serif;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.tsrness h4 a:hover {
+    background: #078dcc;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
 .nav-agile {
     background:#078dcc;
 }
