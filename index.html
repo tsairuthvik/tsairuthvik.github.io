@@ -6,11 +6,48 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
+		<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+		
+ 
+
+
+
+ 
 		
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 		<!-- Header -->
 			
@@ -22,7 +59,33 @@
 				formats to work correctly.
 
 			-->
-
+				<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #333; opacity: 0.8;">
+  <div class="container-fluid">
+    <div class="navbar-header" style="padding-left: 4em;">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html" style="font-size: 3em;">T S R</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+       <center> <ul class="nav navbar-nav" style="color: #fff; padding-left: 6em;">
+          <li><a href="index.html" style="font-size: 1.5em;">HOME</a></li>
+          <li style="padding-left: 1.5em; font-size: 1.5em;"><a href="#main">ABOUT ME</a></li>
+          <li style="padding-left: 1.5em; font-size: 1.5em;"><a href="#main1">PORTFOLIO</a></li>
+          <li style="padding-left: 1.5em; font-size: 1.5em;"><a href="#main2">PAPERS</a></li>
+          <li style="padding-left: 1.5em; font-size: 1.5em;"><a href="#main3">ACADEMICS</a></li>
+          <li style="padding-left: 1.5em; font-size: 1.5em;"><a href="#main4">BLOG</a></li>
+          <li style="padding-left: 1.5em; font-size: 1.5em;"><a href="#main5">CONTACT</a></li>
+            </ul></center>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 				
 				<section id="banner">
 
@@ -38,7 +101,7 @@
 						<a href="cv/TSR-CV-Internship.pdf" target="_blank" class="button big alt scrolly icon fa-file"></a>
 
 					</div>-->
-					<div class="inner">
+					<div class="inner" style="color: #fff;">
 						<a href="index.html"><img src="images/tsairuthvik.png" alt="" style="position: relative;bottom: 155px;right: 600px;"></a>
 						<header>
 
@@ -48,13 +111,13 @@
 
 					<ul class="icons">
 					
-						<li><a href="index.html" class="icon fa-home fa-2x tooltip"><span class="label tooltiptext">Facebook</span></a><h5 style="position: relative;bottom: 20px;">HOME</h5></li>
-						<li><a href="aboutme.html#main" class="big alt scrolly icon fa-user fa-2x"><span class="label">LinkedIn</span></a><h5 style="position: relative;bottom: 20px;">ABOUT ME</h5></li>
-						<li><a href="#main" class="big alt scrolly icon fa-briefcase fa-2x"><span class="label">LinkedIn</span></a><h5 style="position: relative;bottom: 20px;">PORTFOLIO</h5></li>
-						<li><a href="#main1" class="big alt scrolly icon fa-folder fa-2x"><span class="label">LinkedIn</span></a><h5 style="position: relative;bottom: 20px;">PAPERS</h5></li>
-						<li><a href="#main2" class="big alt scrolly icon fa-rss-square fa-2x"><span class="label">YouTube</span></a><h5 style="position: relative;bottom: 20px;">BLOG</h5></li>
-						<li><a href="contact.html#main" class="big alt scrolly icon fa-phone-square fa-2x"><span class="label">GitHub</span></a><h5 style="position: relative;bottom: 20px;">CONTACT</h5></li>
-						<li><a href="cv/TSR_CV.pdf" class="icon fa-file fa-2x" target="_blank"><span class="label">GitHub</span></a><h5 style="position: relative;bottom: 20px;">DOWNLOAD MY CV</h5></li>
+						
+						<li><a href="#main" class="big alt scrolly icon fa-user fa-2x" style="text-decoration: none; color: #fff;"><span class="label">LinkedIn</span></a><h5 style="position: relative;bottom: 20px;">ABOUT ME</h5></li>
+						<li><a href="#main1" class="big alt scrolly icon fa-briefcase fa-2x" style="text-decoration: none; color: #fff;"><span class="label">LinkedIn</span></a><h5 style="position: relative;bottom: 20px;">PORTFOLIO</h5></li>
+						<li><a href="#main2" class="big alt scrolly icon fa-folder fa-2x" style="text-decoration: none; color: #fff;"><span class="label">LinkedIn</span></a><h5 style="position: relative;bottom: 20px;">PAPERS</h5></li>
+						<li><a href="#main4" class="big alt scrolly icon fa-rss-square fa-2x" style="text-decoration: none; color: #fff;"><span class="label">YouTube</span></a><h5 style="position: relative;bottom: 20px;">BLOG</h5></li>
+						<li><a href="#main5" class="big alt scrolly icon fa-phone-square fa-2x" style="text-decoration: none; color: #fff;"><span class="label">GitHub</span></a><h5 style="position: relative;bottom: 20px;">CONTACT</h5></li>
+						<li><a href="cv/TSR_CV.pdf" class="icon fa-file fa-2x" target="_blank" style="text-decoration: none; color: #fff;"><span class="label">GitHub</span></a><h5 style="position: relative;bottom: 20px;">DOWNLOAD MY CV</h5></li>
 					</ul>
 					
 				</div>
@@ -65,22 +128,82 @@
 			<div id="main">
 
 			<!-- One -->
+			<section class="style1" style="background-color: #333;">
+	<header class="align-center">
+		<br>
+				<br><a class="icon fa-user fa-3x" style="color: #000;text-decoration: none;"></a>	
+				<H4 style="position: relative;bottom: 20px; color: #000;">ABOUT ME<H4>
+			</header>
 
+					<div class="container">
+			
+			<div class="w3l-grids-about" style="position: relative;top: 20px;">
+				<div class="col-md-5 w3ls-ab-right">
+					<div class="agile-about-right-img">
+						<img src="images/tsr2.jpg" alt="" style="width:250px;height:250px;">
+					</div>
+				</div>
+				<div class="col-md-7 w3ls-agile-left">
+					<div class="w3ls-agile-left-info">
+						<div class="wel-left animated wow fadeInLeft" data-wow-delay=".5s">
+							<div class="icon-w3l">
+								<i class="hovicon effect-2 sub-a" style="color: #078dcc"><span class="glyphicon glyphicon-user gi-2x" aria-hidden="true"></span></i>
+							</div>
+							<div class="text-w3l">
+								<h4 style="color: #078dcc">INTRODUCTION</h4>
+								<p style="color: #000;">I'm a graduate student at University of California, Santa Cruz pursuing Masters in Games and Playable Media. I have a B.E(Hons.) degree in Electronics and Instrumentation from BITS-Pilani, India. I am a Computer Mediated Reality and Game Enthusiast, I am highly interested in developing Augmented Reality(AR) and Virtual Reality(VR) game applications for Android and iOS Devices. I am also interested in Internet of Things(IoT) and Connected devices, Brain Computer Interfaces(BCI), Machine Learning and Artificial Intelligence. </p><br>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="w3ls-agile-left-info">
+						<div class="wel-left animated wow fadeInLeft" data-wow-delay=".5s">
+							<div class="icon-w3l">
+								<i class="hovicon effect-2 sub-a"  style="color: #078dcc"><span class="glyphicon glyphicon-phone gi-2x" aria-hidden="true"></span></i>
+							</div>
+							<div class="text-w3l">
+								<h4  style="color: #078dcc">AUGMENTED REALITY DEVELOPER</h4>
+								<p style="color: #000;">I have worked on Augmented Reality based Indoor navigation using NFC tags and QR codes as a project under the course "Software Development for Portable Devices". I have also done small projects like Marker based Augmented reality with Arduino serial data control and joystick control, making the object interactive and also a videoplayback based augmented reality system. I have recently designed an app in which an object can be controlled via blink data from the Neurosky EEG Headset. I have experience in working with Vuforia, Wikitude, ARKit, Kudan and some other Augmented Reality Frameworks.</p><br>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="w3ls-agile-left-info">
+						<div class="wel-left animated wow fadeInLeft" data-wow-delay=".5s">
+							<div class="icon-w3l">
+								<i class="hovicon effect-2 sub-a" style="color: #078dcc"><span class="glyphicon glyphicon-signal gi-2x" aria-hidden="true"></span></i>
+							</div>
+							<div class="text-w3l">
+								<h4 style="color: #078dcc">INTERNET OF THINGS</h4>
+								<p  style="position: relative; padding-bottom: 1em; color: #000;">I have done my undergraduate thesis at ISEP, France in Visible Light communication(VLC). I have designed the Visible Light Communication(VLC) transmitter and Receiver in Eagle software and then printed it on PCB boards and implemented the VLC transmitter and receiver boards on ARDUINO and Beagle bone black Platforms. During my Undergraduate studies, I have done projects on Internet of Things in the medical department and also have associated paper publications.</p><br>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<br>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+			<br>
+</section>
 
 			<!-- Two -->
-				<section class="wrapper style2">
+				<section class="wrapper style2" id="main1">
 					<div class="inner">
 						<header>
 							<br>
+							<br>
 							<h2>PORTFOLIO</h2>
+							<br>
 							<p>The projects are segregated as Recent, Augmented Reality and IoT projects.</p>
 						</header>
 						<!-- Tabbed Video Section -->
 							<div class="flex flex-tabs">
 								<ul class="tab-list">
-									<li><a href="#" data-tab="tab-1" class="active">PROJECTS</a></li>
-									<li><a href="#" data-tab="tab-2">AR PROJECTS</a></li>
-									<li><a href="#" data-tab="tab-3">IoT PROJECTS</a></li>
+									<li><a href="#" data-tab="tab-1" class="active" style="text-decoration: none;">PROJECTS</a></li>
+									<li><a href="#" data-tab="tab-2" style="text-decoration: none;">AR PROJECTS</a></li>
+									<li><a href="#" data-tab="tab-3" style="text-decoration: none;">IoT PROJECTS</a></li>
 								</ul>
 								<div class="tabs">
 
@@ -91,10 +214,10 @@
 													<div class="image fit">
 														<img src="images/maxresdefault.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										Integration of BCI with AR
 									</p>
 													<a href="bciar.html"  target="_blank" class="link"><span>Click Me</span></a>
@@ -104,10 +227,10 @@
 													<div class="image fit">
 														<img src="images/smart.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										S-MART
 									</p>
 													<a href="smart.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -117,10 +240,10 @@
 													<div class="image fit">
 														<img src="images/arresume.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										AR Resume
 									</p>
 													<a href="resume.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -130,10 +253,10 @@
 													<div class="image fit">
 														<img src="images/leap.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										Integration of Leap Motion with AR
 									</p>
 													<a href="leap motion.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -143,10 +266,10 @@
 													<div class="image fit">
 														<img src="images/unitywifi.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 									Unity-Arduino-WiFi-Socket-Communication
 									</p>
 													<a href="unity wifi.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -156,10 +279,10 @@
 													<div class="image fit">
 														<img src="images/heart.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										Heart Rate Sensor
 									</p>
 													<a href="ecg.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -173,10 +296,10 @@
 													<div class="image fit">
 														<img src="images/maxresdefault.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										Integration of BCI with AR
 									</p>
 													<a href="bciar.html"  target="_blank" class="link"><span>Click Me</span></a>
@@ -186,10 +309,10 @@
 													<div class="image fit">
 														<img src="images/smart.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										S-MART
 									</p>
 													<a href="smart.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -199,10 +322,10 @@
 													<div class="image fit">
 														<img src="images/arresume.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										AR Resume
 									</p>
 													<a href="resume.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -212,10 +335,10 @@
 													<div class="image fit">
 														<img src="images/leap.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										Integration of Leap Motion with AR
 									</p>
 													<a href="leap motion.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -224,10 +347,10 @@
 													<div class="image fit">
 														<img src="images/arpokemon.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										AR Games
 									</p>
 													<a href="arpokemongame.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -236,10 +359,10 @@
 													<div class="image fit">
 														<img src="images/ar.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										Basic AR Applications
 									</p>
 													<a href="trump.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -257,10 +380,10 @@
 													<div class="image fit">
 														<img src="images/heart.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 										Heart Rate Sensor
 									</p>
 													<a href="ecg.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -270,10 +393,10 @@
 													<div class="image fit">
 														<img src="images/unitywifi.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 									Unity-Arduino-WiFi-Socket-Communication
 									</p>
 													<a href="unity wifi.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -283,10 +406,10 @@
 													<div class="image fit">
 														<img src="images/bluetooth.jpg" alt="" />
 														<div class="arrow">
-															<div class="icon fa-play"></div>
+															
 														</div>
 													</div>
-													<p class="caption">
+													<p class="caption2">
 									Arduino Bluetooth Communication
 									</p>
 													<a href="bluetooth.html" target="_blank" class="link"><span>Click Me</span></a>
@@ -298,12 +421,11 @@
 					</div><br>
 				</section>
 
-			<!-- Three -->
-				<section class="wrapper" id="main1">
+								<section class="wrapper" id="main2">
 					<div class="inner">
 						<header class="align-center">
 							<br>
-							<h2>PUBLICATIONS</h2>
+							<h2>PUBLICATIONS</h2><br>
 							<p>I have done projects on Internet of Things in the medical department and also have associated paper publications</p>
 						</header>
 
@@ -333,7 +455,282 @@
 					</div><br>
 				</section>
 
-				<section class="wrapper style2" id="main2">
+				<section class="wrapper style2" id="main3">
+					<div class="inner">
+						<header class="align-center"><br><br>
+							<a class="icon fa-graduation-cap fa-3x" style="color: #fff; text-decoration: none;"></a>	
+							<H4 style="position: relative;bottom: 20px;">ACADEMICS<H4>
+							
+						</header>
+						<!-- Tabbed Video Section -->
+							<div class="flex flex-tabs">
+								<ul class="tab-list">
+									<li><a href="#" data-tab="tab-1" class="active" style="text-decoration: none;">WORK EXPERIENCE</a></li>
+									<li><a href="#" data-tab="tab-2" style="text-decoration: none;">SKILLS</a></li>
+									<li><a href="#" data-tab="tab-3" style="text-decoration: none;">EDUCATION</a></li>
+								</ul>
+								<div class="tabs">
+
+									<!-- Tab 1 -->
+										<div class="tab tab-1 flex flex-3 active">
+											<!-- Video Thumbnail -->
+												
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/bits.png" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										May. 2017-Feb. 2018 
+									</p><p class="caption1">
+										BITS PILANI
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										Research Assistant on AR & BCI
+									</p></center>
+													
+												</div>
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/uniroc.jpg" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										Sep. 2017-Jan. 2018 
+									</p><p class="caption1">
+										UNIVERSITY OF ROCHESTER
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										Remote Intern on AR
+									</p></center>
+													
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/bits.png" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										Jan. 2017-May. 2017 
+									</p><p class="caption1">
+										BITS PILANI
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										Teaching Assistant
+									</p></center>
+													
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/isep.png" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										Jul. 2016-Dec. 2016 
+									</p><p class="caption1">
+										ISEP, FRANCE
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										Reseach Intern
+									</p></center>
+													
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/bits.png" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										Feb. 2016-May. 2016 
+									</p><p class="caption1">
+										TIP, BITS PILANI
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										Project Mentor
+									</p></center>
+													
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/rsp.jpg" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										May. 2015-Jul. 2015 
+									</p><p class="caption1">
+										ROURKELA STEEL PLANT
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										Summer Intern
+									</p></center>
+													
+												</div>
+										</div>
+
+									<!-- Tab 2 -->
+										<div class="tab tab-2 flex flex-3">
+											<!-- Video Thumbnail -->
+											<div class="video col">
+													<div class="image fit">
+														<img src="images/software.jpg" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										SOFTWARES 
+									</p><p class="caption1">
+										Unity, Android Studio, Arduino,
+									</p><p class="caption1">
+										Visual Studio, Adobe PhotoShop, MATLAB
+									</p></center>
+								
+													
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/lang.jpg" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										LANGUAGES
+									</p><p class="caption1">
+										C, C++, C#, JavaScript, Python
+									</p></center>
+
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/ar.jpg" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										AR FRAMEWORKS 
+									</p><p class="caption1">
+										Vuforia, ARCore, ARKit
+									</p></center>
+													
+												</div>
+											
+											
+										</div>
+
+									<!-- Tab 3 -->
+										<div class="tab tab-3 flex flex-3">
+											<!-- Video Thumbnail -->
+											
+											<!-- Video Thumbnail -->
+												<div class="video col" onclick="location.href='https://campusdirectory.ucsc.edu/detail.php?&uid=sthanday';" target="_blank" style="cursor:pointer">
+													<div class="image fit">
+														<img src="images/ucsc.png" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										Starting Fall'18
+									</p><p class="caption1">
+										UC SANTA CRUZ
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										MS in Games and Playable Media
+									</p></center>
+													
+												</div>
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/bits.png" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										2013-2017 
+									</p><p class="caption1">
+										BITS PILANI
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										B.E.(Hons.) in Electronics
+									</p></center>
+													
+												</div>
+												
+											<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/fiitjee.png" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										2011-2012 
+									</p><p class="caption1">
+										FIITJEE
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										89.1% in 12th Boards
+									</p></center>
+													
+												</div>
+												
+												<!-- Video Thumbnail -->
+												<div class="video col">
+													<div class="image fit">
+														<img src="images/dav.jpg" alt="" />
+														<div class="arrow">
+															
+														</div>
+													</div>
+													<center><p class="caption1" style="font-weight: bold;">
+										2010 
+									</p><p class="caption1">
+										DAV SAFILGUDA
+									</p>
+								<p class="caption1" style="font-style: italic;">
+										9.8/10 in 10th Boards
+									</p></center>
+													
+												</div>
+
+
+										</div>
+
+								</div>
+							</div>
+					</div><br>
+				</section>
+
+
+
+			<!-- Three -->
+
+
+				<section class="wrapper style2" id="main4">
 					<div class="inner">
 						<header class="align-center"><br>
 							<h2>MY BLOG(coming soon....)</h2>
@@ -346,7 +743,7 @@
 									<div class="image fit">
 										<img src="images/ecg.jpg" alt="" />
 									</div>
-									<p class="caption">
+									<p class="caption2">
 										A Portable Real Time ECG Device for Arrhythmia Detection Using Raspberry Pi
 									</p>
 									<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-58877-3_24" class="link" target="_blank"><span>Click Me</span></a>
@@ -357,7 +754,7 @@
 										<img src="images/eeg.jpg" alt="" />
 										
 									</div>
-									<p class="caption">
+									<p class="caption2">
 										EEG-based classification of bilingual unspoken speech using ANN
 									</p>
 									<a href="http://ieeexplore.ieee.org/document/8037000/" class="link" target="_blank"><span>Click Me</span></a>
@@ -366,21 +763,77 @@
 					</div><br>
 				</section>
 
+<section class="style2" id="main5">
+	<header class="align-center">
+		<br>
+		<br>
+							<a class="icon fa-phone-square fa-3x" style="color: #000; text-decoration: none;"></a>	
+							<H4 style="position: relative;bottom: 20px;">CONTACT<H4>
+							
+						</header>
+						<br>
+						<center><div class="flex flex-2">
+							
+				<div class="add-w3ls-main video col">
+						<span class="glyphicon glyphicon-map-marker gi-2x" aria-hidden="true"></span>
+					<div class="add-w3ls2" style="position: relative;bottom: 8px;">
+						<h5>Location</h5>
+						<p style="position: relative;bottom: 8px;">APT 1304, 1031 Clyde Ave, Santa Clara, CA 95054, USA</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="add-w3ls-main video col">	
+						<span class="glyphicon glyphicon-envelope gi-2x" aria-hidden="true"></span>
+					<div class="add-w3ls2" style="position: relative;bottom: 8px;">
+						<h5>Email</h5>
+						<p style="position: relative;bottom: 8px;"><a href="mailto:tsairuthvik@gmail.com" style="text-decoration: none;color: #078dcc">tsairuthvik@gmail.com</a></p>
+						<p style="position: relative;bottom: 18px;"><a href="mailto:sthanday@ucsc.edu" style="text-decoration: none;color: #078dcc">sthanday@ucsc.edu</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="add-w3ls-main video col">	
+						<span class="glyphicon glyphicon-earphone gi-2x" aria-hidden="true"></span> 
+					<div class="add-w3ls2" style="position: relative;bottom: 8px;">
+						<h5>Call Me</h5>
+						<p style="position: relative;bottom: 8px;">+91 853 012 5309</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="add-w3ls-main video col">	
+						<span class="fa fa-skype fa-3x" aria-hidden="true"></span> 
+					<div class="add-w3ls2" style="position: relative;bottom: 8px;">
+						<h5>Skype ID</h5>
+						<p style="position: relative;bottom: 8px;"><a href="skype:t_sairuthvik?add" style="text-decoration: none;color: #078dcc">t_sairuthvik</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			
+		
+		</div>
+					<div style="width: 80%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=1031%2C%20Clyde%20Avenue%2C%20%231304%2C%20Santa%20Clara%2C%20USA+(Your%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">Create a custom Google Map</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe></div><br /></CENTER>
+					
+				<br>
+<BR>
+					
+			
+
+
+			</section>
 			</div>
 
 		<!-- Footer -->
 			<footer id="footer">
 				
 
-				<div class="copyright">
+				<div class="copyright" style="color: #000;">
 					<ul class="icons">
 					
-						<li><a href="https://www.facebook.com/tsairuthvik" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/sai-ruthvik-thandayam-44ba2086/" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.youtube.com/channel/UCwYDsndVro53e5aKwRCJlBA?view_as=subscriber" class="icon fa-youtube" target="_blank"><span class="label">YouTube</span></a></li>
-						<li><a href="https://github.com/tsairuthvik10" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.facebook.com/tsairuthvik" class="icon fa-facebook" target="_blank" style="text-decoration: none; color: #000;"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/in/sai-ruthvik-thandayam-44ba2086/" class="icon fa-linkedin" target="_blank" style="text-decoration: none; color: #000;"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.youtube.com/channel/UCwYDsndVro53e5aKwRCJlBA?view_as=subscriber" class="icon fa-youtube" target="_blank" style="text-decoration: none; color: #000;"><span class="label">YouTube</span></a></li>
+						<li><a href="https://github.com/tsairuthvik10" class="icon fa-github" target="_blank" style="text-decoration: none; color: #000;"><span class="label">GitHub</span></a></li>
 											</ul>
-					&copy; 2018 T Sai Ruthvik. All rights reserved | Design by <b><a href="index.html">Sai Ruthvik Thandayam</a>
+					&copy; 2018 T Sai Ruthvik. All rights reserved | Design by <b><a href="index.html" style="text-decoration: none; color: #000;">Sai Ruthvik Thandayam</a>
 				</div>
 			</footer>
 
