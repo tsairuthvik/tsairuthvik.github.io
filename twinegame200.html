@@ -745,7 +745,7 @@ Gone. Along with that nasty mood. Dial tone.
 [[Do you think you’re gonna be alright?-&gt;alright1]]
 [[You didn’t do anything to deserve this.-&gt;alright2]]
 (set: $physical -= 2)(set: $social -= 3)
-(if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="83" name="lunchbreak" tags="phone3" position="3745,357" size="100,100">[[Go back to work-&gt;Phone Ringingk]]</tw-passagedata><tw-passagedata pid="84" name="alright1" tags="phone3" position="2630,1853" size="100,100">
+(if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="83" name="lunchbreak" tags="phone3" position="3417,489" size="100,100">[[Go back to work-&gt;Phone Ringingk]]</tw-passagedata><tw-passagedata pid="84" name="alright1" tags="phone3" position="2630,1853" size="100,100">
 “Probably not… but honestly, I’m too tired to care anymore.”
 With a click, the call drops out. Dial tone.
 
@@ -1081,6 +1081,7 @@ Perhaps what I’m doing really does matter. Dial Tone.
 
 
 </tw-passagedata><tw-passagedata pid="130" name="footer" tags="footer" position="147,363" size="100,100">(if: ($physical &lt;= 75) &amp;&amp; ($physical &gt;= 51))[(set: $mental -= 2)](if: ($social &lt;= 75) &amp;&amp; ($social &gt;= 51))[(set: $mental -= 2)](if: $physical &lt;= 50)[(set: $mental -= 3)](if: $social &lt;= 50)[(set: $mental -= 3)](if: $mental &gt;= 100)[(set: $mental = 100)](if: $physical &gt;= 100)[(set: $physical = 100)](if: $social &gt;= 100)[(set: $social = 100)](if: $mental &lt; 0)[(set: $mental = 0)](if: $mental &lt; 10)[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Sounds/390424__mezcel__254366-harrybates01-heartbeat-fast-mezcelized.mp3&quot; autoplay loop&gt;]
+&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Not%20Without%20the%20Rest.mp3&quot; autoplay loop&gt;
 &lt;span&gt;Mental: $mental&lt;/span&gt;\
 &lt;div id=&quot;mental-bar&quot;&gt;\
     &lt;div class=&quot;bar-mental&quot;&gt;&lt;/div&gt;\
