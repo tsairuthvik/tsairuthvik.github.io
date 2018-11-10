@@ -22,6 +22,11 @@ tw-sidebar tw-icon.undo {
     display: none;
 }
 
+@font-face {
+    font-family: 'Chalkduster'; /*a name to be used later*/
+    src: url('ChalkDust.ttf'); /*URL to font*/
+}
+
 #mental-bar {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -118,6 +123,7 @@ tw-story[tags~="phone7"] {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">/* Create an unique private namespace to contain custom code. */
 if (!window.MENTAL) {
 	window.MENTAL = {};
@@ -179,6 +185,7 @@ audio.play();
 
 // Fade In - turn the volume up
 $('#nowplaying').animate({volume: 0.2}, 2000);
+
 
 
 
