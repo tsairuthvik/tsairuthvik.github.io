@@ -86,16 +86,19 @@ tw-story[tags~="phone1"] {
 	background-color: black;
 }
 tw-story[tags~="phone2"] {
-	background-color: #351C4D;
+	background-color: #270a42;
 }
 tw-story[tags~="phone3"] {
-	background-color: #765285;
+	background-color: #481251;
 }
 tw-story[tags~="phone4"] {
-	background-color: #FF7E5F;
+	background-color: #651c72;
 }
 tw-story[tags~="phone5"] {
-	background-color: #FEB47B;
+	background-color: #a5229d;
+}
+tw-story[tags~="phone7"] {
+	background-color: #fcd588;
 }
 
 
@@ -181,7 +184,7 @@ $('#nowplaying').animate({volume: 0.2}, 2000);
 </script><tw-passagedata pid="1" name="Phone Ringing" tags="phone1" position="870,139" size="100,100">
 [[Pick up the call]]
 (set: $physical += 2)(set: $social += 3)
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Old%20Electric%20Phone%20Ringer%20Sound%20Effect%20Royalty-Free%281%29.mp3&quot; autoplay loop&gt;](if: $mental is 0)[(go-to: &quot;gameover&quot;)]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Phone%20Ring%202%20Sound%20Effect%20Royalty-Free%20Stock%20Audio%20.mp3&quot; autoplay loop&gt;](if: $mental is 0)[(go-to: &quot;gameover&quot;)]
 </tw-passagedata><tw-passagedata pid="2" name="Pick up the call" tags="phone1" position="873,326" size="100,100">
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“Hey, so not gonna lie. I dropped a bunch of acid, and I can’t be alone right now.”&lt;/a&gt;
 [[It’s okay, I’m here-&gt;Choice 1]]
@@ -244,7 +247,7 @@ His voice is shaking. As if he&#39;s... pleading.
 
 
 An anguished scream rings through the receiver, and the call drops out.
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt; Phone Ringing]]
 (set: $mental -= 20)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="11" name="Choice6" tags="phone1" position="755,1237" size="100,100">
@@ -269,7 +272,7 @@ An anguished scream rings through the receiver, and the call drops out.
 
 
 Something creaks, the man grunts softly. Then, a click.
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt; Phone Ringing]] 
 (set: $mental += 5)(if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="15" name="choice10" tags="phone1" position="931,1517" size="100,100">
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“I’m sitting… in a recliner. Looking at the ceiling. The colors, they’re still on fire.”&lt;/a&gt;
@@ -284,7 +287,7 @@ He yawns deeply. Is he getting sleepy?
 
 
 You hear a calm sigh, then a click. Dial
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt; Phone Ringing]] 
 
 (set: $mental += 10)(set: $physical -= 2)
@@ -300,7 +303,7 @@ You hear a calm sigh, then a click. Dial
 
 
 Something creaks, the man grunts softly. Then, a click.
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt; Phone Ringing]] 
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="19" name="choice15" tags="phone1" position="868,2021" size="100,100">
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“NO! DON’T CALL ANYONE, THEY CAN’T HELP ME!”&lt;/a&gt;
@@ -309,7 +312,7 @@ Something creaks, the man grunts softly. Then, a click.
 
 
 Before you can respond, he hangs up the phone.
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 (set: $mental -= 10)(if: $mental is 0)[(go-to: &quot;gameover&quot;)]
 [[Hang Up-&gt; Phone Ringing]]
 
@@ -326,7 +329,7 @@ Before you can respond, he hangs up the phone.
 &lt;a style=&quot;font-family: Chalkduster, fantasy; font-size: 100%; color: #FFFFCC&quot;&gt;Twin Musicom&lt;/a&gt;&lt;/center&gt;
 
 &lt;center&gt;&lt;a style=&quot;font-family: Chalkduster, fantasy; font-size: 100%; color: #FFFFCC&quot;&gt;[[Play Game-&gt;Phone Ringing]]&lt;/a&gt;&lt;/center&gt;
-&lt;center&gt;&lt;a style=&quot;font-family: Chalkduster, fantasy; font-size: 100%; color: #FFFFCC&quot;&gt;[[Check Description-&gt;description]]&lt;/a&gt;&lt;/center&gt;
+&lt;center&gt;&lt;a style=&quot;font-family: Chalkduster, fantasy; font-size: 100%; color: #FFFFCC&quot;&gt;[[Check Story-&gt;description]]&lt;/a&gt;&lt;/center&gt;
 
 (set: $count to 0)
 (set: $maxMental to 100)
@@ -568,13 +571,13 @@ So bad for your health, yet so good for your soul.&quot;(set: $mental += 15)(set
 </tw-passagedata><tw-passagedata pid="26" name=" Phone Ringing" tags="phone2" position="1575,415" size="100,100">
 [[Pick up the call-&gt;pick1]]
 [[Take a Break]] 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Old%20Electric%20Phone%20Ringer%20Sound%20Effect%20Royalty-Free%281%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Phone%20Ring%202%20Sound%20Effect%20Royalty-Free%20Stock%20Audio%20.mp3&quot; autoplay loop&gt;]
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]
 (if: ($physical &lt;= 75) &amp;&amp; ($physical &gt;= 51))[(set: $mental += 2)](if: ($social &lt;= 75) &amp;&amp; ($social &gt;= 51))[(set: $mental += 2)](if: $physical &lt;= 50)[(set: $mental += 3)](if: $social &lt;= 50)[(set: $mental += 3)]</tw-passagedata><tw-passagedata pid="27" name="Phone Ringing1" tags="phone3" position="2624,384" size="100,100">
 [[Pick up the call-&gt;pickx]]
 [[Take a Break-&gt;break1]] 
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Old%20Electric%20Phone%20Ringer%20Sound%20Effect%20Royalty-Free%281%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Phone%20Ring%202%20Sound%20Effect%20Royalty-Free%20Stock%20Audio%20.mp3&quot; autoplay loop&gt;]
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]
 (if: ($physical &lt;= 75) &amp;&amp; ($physical &gt;= 51))[(set: $mental += 2)](if: ($social &lt;= 75) &amp;&amp; ($social &gt;= 51))[(set: $mental += 2)](if: $physical &lt;= 50)[(set: $mental += 3)](if: $social &lt;= 50)[(set: $mental += 3)]
 </tw-passagedata><tw-passagedata pid="28" name="pick1" tags="phone2" position="1575,565" size="100,100">
@@ -615,7 +618,7 @@ There&#39;s a great deal of weight and strain in her voice.
 [[Do you really think that’s the answer?-&gt;answer]]
 (set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="34" name="gun" tags="phone2" position="1705,1015" size="100,100">
-&lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“His gun is in the nightstand. I’ve been thinking about how it could make all this go away.&quot;
+&lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“His gun is in the nightstand. I’ve been thinking about how it could make all this go away.&quot;&lt;/a&gt;
 
 [[Don’t do anything you’d regret.-&gt;regret]]
 [[Do you really think that’s the answer?-&gt;answer]]
@@ -660,7 +663,7 @@ There&#39;s a great deal of weight and strain in her voice.
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“I-I see. Guess I really am a lost cause, doesn’t it? Don’t worry, I won’t take up anymore of your time.”&lt;/a&gt;
 Without another word, she hangs up the phone.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;Phone Ringing1]] 
 (set: $mental -= 15)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="42" name="deep" tags="phone2" position="1551,1618" size="100,100">
@@ -673,7 +676,7 @@ Without another word, she hangs up the phone.
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“You’re right, I don’t know what I was thinking. I’m sorry for wasting your time.”&lt;/a&gt;
 Before you can protest, you hear a click on the other end.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;Phone Ringing1]] 
 (set: $mental -= 15)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="44" name="okay" tags="phone2" position="1609,1744" size="100,100">
@@ -713,14 +716,14 @@ She’s slowly coming to a realization.
 
 Sounds optimistic.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;Phone Ringing1]] 
 (set: $mental += 20)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="50" name="insist" tags="phone2" position="1920,1472" size="100,100">
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“I’m… I’m sorry, I’ve got to go. I can’t handle this pressure anymore.”&lt;/a&gt;
 The phone call drops suddenly.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;Phone Ringing1]] 
 (set: $mental -= 20)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="51" name="wnot" tags="phone2" position="1779,1476" size="100,100">
@@ -752,11 +755,11 @@ Still tense, but she’s definitely calming down a bit.
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“When I do, all I think about is how they won’t be there to see it with me… I’m sorry, I have to go.”&lt;/a&gt;
 
 She hangs up the phone very suddenly.
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;Phone Ringing1]] 
 (set: $mental -= 15)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="56" name="thingz" tags="phone2" position="1901,2056" size="100,100">
-Well, when you put it like that… I guess I’ve been living for my husband and kids for so long, I’ve forgotten what it feels like to live for myself.”&lt;/a&gt;
+&lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“Well, when you put it like that… I guess I’ve been living for my husband and kids for so long, I’ve forgotten what it feels like to live for myself.”&lt;/a&gt;
 
 That almost sounds… hopeful?
 [[It’s not too late to try.-&gt;try]]
@@ -779,7 +782,7 @@ That almost sounds… hopeful?
 
 That seems to have ended well! Dial tone.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;Phone Ringing1]] 
 (set: $mental += 20)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="60" name="pickx" tags="phone3" position="2875,467" size="100,100">
@@ -938,11 +941,11 @@ More anger. Nothing seems to work.
 
 Gone. Along with that nasty tone.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;lunchbreak]]
 (set: $mental -= 15)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="81" name="fuck2" tags="phone3" position="2770,1658" size="100,100">
-&lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“No, you know what… I’m sorry, you’re just trying to help me feel better. I should probably just go.&quot;
+&lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“No, you know what… I’m sorry, you’re just trying to help me feel better. I should probably just go.&quot;&lt;/a&gt;
 
 [[Do you think you’re gonna be alright?-&gt;alright1]]
 [[You didn’t do anything to deserve this.-&gt;alright2]]
@@ -951,7 +954,7 @@ Gone. Along with that nasty tone.
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“Probably not… but honestly, I’m too tired to care anymore.”&lt;/a&gt;
 With a click, the call drops out.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;lunchbreak]] 
 (set: $mental -=5)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="83" name="alright2" tags="phone3" position="2760,1817" size="100,100">
@@ -984,7 +987,7 @@ Sobbing. Every convulsive gasp rings in your ear, clear as glass.
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“Yeah. I’ll try.”&lt;/a&gt;
 A quiet pause for a moment. Then, a click.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;lunchbreak]] 
 (set: $mental += 5)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="88" name="takecare2" tags="phone3" position="2650,2267" size="100,100">
@@ -1011,7 +1014,7 @@ A cautious and wary tone. Definitely been hurt badly by other people.
 
 The departure was brief, but satisfying.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;lunchbreak]] 
 (set: $mental +=15)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="92" name="glad2" tags="phone3" position="2546,2598" size="100,100">
@@ -1019,14 +1022,14 @@ The departure was brief, but satisfying.
 
 A sigh of relief.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;lunchbreak]] 
 (set: $mental +=15)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="93" name="evidence1" tags="phone3" position="3186,1271" size="100,100">
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“I knew it! It was such a stupid idea calling this fucking line. Of course you guys would just judge me.”&lt;/a&gt;
 An exasperated scream, then silence.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;lunchbreak]] 
 (set: $mental -=15)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="94" name="evidence2" tags="phone3" position="3180,1420" size="100,100">
@@ -1150,16 +1153,56 @@ She seems to have lost hope in you.
 
 An air of uncertainty as the dial tone drones.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;wingame]]
-(set: $mental -= 15)(set: $physical -= 2)(set: $social -= 3)
+(set: $mental += 50)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="112" name="LGBTCenter" tags="phone5" position="4788,1598" size="100,100">
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“Okay, that sounds perfect. I’ll head over there. Do you think it’d be a good place for Stacy to go too?”&lt;/a&gt;
 
 [[Yes, but only if she gets there safely.-&gt;safely1]]
 [[I don’t think it’s a good idea to get her now.-&gt;safely2]]
 (set: $physical -= 2)(set: $social -= 3)
-(if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="113" name="wingame" tags="" position="4362,2106" size="100,100">&quot;You look outside and realize that the sun is shining brightly. It&#39;s morning, your shift is over! It&#39;s been quite an eventful night, but you made it through without being worse for wear. You now have the weekend to look forward to, so take a deep breath and relax. You can think about the next shift on Monday.&quot;</tw-passagedata><tw-passagedata pid="114" name="safe2" tags="phone5" position="4855,1354" size="100,100">
+(if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="113" name="wingame" tags="phone7" position="4362,2106" size="100,100">&lt;center&gt;
+
+
+(set: $mental to 50)
+&lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;
+&quot;You look outside and realize that the sun is shining brightly. It&#39;s morning, your shift is over! It&#39;s been quite an eventful night, but you made it through without being worse for wear. You now have the weekend to look forward to, so take a deep breath and relax. You can think about the next shift on Monday.&quot;
+
+&lt;/a&gt;
+&lt;/center&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="114" name="safe2" tags="phone5" position="4855,1354" size="100,100">
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“Well, I’m tired. I’m out on the streets. My girlfriend is going to one of those 
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“pray the gay away”&lt;/a&gt; camps. So… Not feeling great. I’m so scared right now.”&lt;/a&gt;
 
@@ -1171,7 +1214,7 @@ An air of uncertainty as the dial tone drones.
 
 She sounds pretty tired. It&#39;s hard not to relate.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;wingame]] 
 (set: $mental += 10)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="116" name="safely2" tags="phone5" position="4866,1946" size="100,100">
@@ -1179,7 +1222,7 @@ She sounds pretty tired. It&#39;s hard not to relate.
 
 Well, at least that.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;wingame]] 
 (set: $mental += 10)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="117" name="pickc" tags="phone4" position="3992,570" size="100,100">
@@ -1225,7 +1268,7 @@ She&#39;s speaking calmly.
 
 Second chances. Do most people in life get one, or even deserve one?
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;Phone Ringingd]] 
 (set: $mental +=20)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="124" name="onboard" tags="phone4" position="3833,1205" size="100,100">
@@ -1233,13 +1276,13 @@ Second chances. Do most people in life get one, or even deserve one?
 
 Perhaps doing this really does matter.
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/158427_ramicio_dial-tone%20%28online-audio-converter.com%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/dial_tone.mp3&quot; autoplay loop&gt;]
 [[Hang Up-&gt;Phone Ringingd]]
 (set: $mental +=20)(set: $physical -= 2)(set: $social -= 3)
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="125" name="Phone Ringingd" tags="phone5" position="4835,300" size="100,100">[[Pick up the call-&gt;picka]]
 [[Take a Break-&gt;breaka]] 
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Old%20Electric%20Phone%20Ringer%20Sound%20Effect%20Royalty-Free%281%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Phone%20Ring%202%20Sound%20Effect%20Royalty-Free%20Stock%20Audio%20.mp3&quot; autoplay loop&gt;]
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]
 (if: ($physical &lt;= 75) &amp;&amp; ($physical &gt;= 51))[(set: $mental += 2)](if: ($social &lt;= 75) &amp;&amp; ($social &gt;= 51))[(set: $mental += 2)](if: $physical &lt;= 50)[(set: $mental += 3)](if: $social &lt;= 50)[(set: $mental += 3)]</tw-passagedata><tw-passagedata pid="126" name="gameover" tags="" position="100,198" size="100,100">&lt;div style=&quot;display: none;&quot;&gt;&lt;img src=&quot;!@#$&quot; onerror=&quot;$(&#39;#nowplaying&#39;).animate({volume: 0}, 1000);&quot; /&gt;&lt;/div&gt;(if: $mental is 0)[&quot;The relentless ringing of the telephones is drowned out by a heartbeat, pounding in your ears like a chisel being hammered into stone.
 
@@ -1325,7 +1368,7 @@ You grab everything on your desk and put it in a box. The sound of ringing phone
 </tw-passagedata><tw-passagedata pid="128" name="lunchbreak" tags="phone4" position="3936,358" size="100,100">[[Pick up the call-&gt;pickc]]
 [[Take a Break-&gt;breakc]] 
 
-[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Old%20Electric%20Phone%20Ringer%20Sound%20Effect%20Royalty-Free%281%29.mp3&quot; autoplay loop&gt;]
+[&lt;audio src=&quot;https://nicksvideogamesounds.yolasite.com/resources/Download%20Phone%20Ring%202%20Sound%20Effect%20Royalty-Free%20Stock%20Audio%20.mp3&quot; autoplay loop&gt;]
 (if: $mental is 0)[(go-to: &quot;gameover&quot;)]
 (if: ($physical &lt;= 75) &amp;&amp; ($physical &gt;= 51))[(set: $mental += 2)](if: ($social &lt;= 75) &amp;&amp; ($social &gt;= 51))[(set: $mental += 2)](if: $physical &lt;= 50)[(set: $mental += 3)](if: $social &lt;= 50)[(set: $mental += 3)]</tw-passagedata><tw-passagedata pid="129" name="breakc" tags="phone4" position="3968,0" size="100,100">(if: $mental is 0)[(go-to: &quot;gameover&quot;)]
 [[Surf the internet-&gt;internet2]]
@@ -1444,13 +1487,56 @@ After all the yelling, it’s surprising to hear something said so quietly.
 [[I don&#39;t know what you mean by &quot;things.&quot;-&gt;things]]
 [[He... assaulted you?-&gt;assault]]
 (set: $physical -= 2)(set: $social -= 3)
-(if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="143" name="SelfHarm" tags="" position="5051,1419" size="100,100">
+(if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="143" name="SelfHarm" tags="phone5" position="5051,1419" size="100,100">
 &lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;“What, no! I’ve been cut up and beaten enough already this week. I just want to be somewhere they won’t hurt me or judge me.
 
 [[Let’s see if there are options for you.-&gt;safe1]]
 [[We’ll get you to a safe place, for sure.-&gt;safe1]]
 (set: $physical -= 2)(set: $social -= 3)
-(if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="144" name="description" tags="" position="475,329" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+(if: $mental is 0)[(go-to: &quot;gameover&quot;)]</tw-passagedata><tw-passagedata pid="144" name="description" tags="" position="475,329" size="100,100">&lt;center&gt;
+
+
+
+&lt;a style=&quot;font-family: Stencil Std, fantasy; font-size: 100%;&quot;&gt;It&#39;s a cold, winter night at the National Crisis Hotline Center. You have recently started working as a volunteer, and you&#39;re not really sure what to expect. While it is important to help the people who call seeking guidance, you must also do everything you can to maintain your own mental health. Make sure to keep an eye on your social and physical activity, as well!&lt;/a&gt;
+
+
+
+[[Return-&gt;startup]] 
+
+
+&lt;/center&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
