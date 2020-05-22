@@ -122,8 +122,13 @@ Players can create their own level. After building levels they can play their ow
   </div>
   <br>
 						
-						<p> I worked as the game programmer/network programmer for this project. I implemented the microphone recording mechanic for the game and I also did the level design.
+						<p> I worked as the game programmer/network programmer for this project. This is the first time I developed a multiplayer networking game and I started out the networking experience with VR(I should have started with a 2d or FPS game to understand the basics of networking).
 						</p>
+						<p> I got confused on how to sync movement of players and how the camera and controllers can be synced across the network, I took a lot of time in figuring this stuff out and this was a serious challenge for me as I barely knew the basics of Photon and I was trying this in VR!</p>
+						<p> I finally figured out to on how to use the OVR Camera and the controllers for different players(I used the OVRCOntroller in the scene instead of adding it to the player prefab), my next hurdle was to sync non player objects in the scene, this proved out to be difficult to me probably because I got confused on how to use RPC functions and PhotonView component.</p>
+						<p> I figured out a solution by just using PhotonNetwork.Instantiate function and adding a photonview component on to the prefab. Then, I worked on getting the player-UI interaction(button click events) and player-Non player interactions(ball interaction). I also implemented a leaderboard.</p>
+						<p>Overall, this project was an enriching experience for me as I learned a lot about networking, and I made two other networking games(Ninja Multiplayer race and AR Multiplayer) because of this project. It was tough at times to test the project because of the quarantine but that didn't let us down and it was a joyful expereience at the end.</p>
+						<p> The project code will be released after June 18th(the results will be out on that day)</p>
 						
 
 </div>
