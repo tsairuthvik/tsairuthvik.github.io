@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>The Best Date Ever</title>
+		<title>VR MiniGolf</title>
 		<link rel="icon" type="images/png" href="images/tsr.png" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,21 +27,32 @@
 				<section class="wrapper style1">
 					<div class="inner">
 						<header class="align-center">
-							<h2>The Best Date Ever</h2>
+							<h2>VR MiniGolf</h2>
 							
 						</header>
 						<div class="video">
 							<div class="video-wrapper">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/96rpuEaHbv8" frameborder="0" allowfullscreen></iframe>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/8I0ltq0k0WQ" frameborder="0" allowfullscreen></iframe>
 							</div>
 							<p class="caption">
-								The Best Date Ever
+								VR MiniGolf
 							</p>
 						</div>
-						<p>The Best Date Ever is a proof of concept for a narrative game that brings out a specific emotion out of the player.  The player plays as a person on a date with a beautiful girl and the game showcases specific moments during the date.</p>
-						<p> This project was done as a group project(Myself, Yehe Lin and Yupeng Li). This project was done as a requirement for the course titled GAME 270.</p>
-						<p> Tools used: Unity Editor, C#</p>
+						<p>VR Mini golf is a multiplayer game. There are two game modes.
+Built Levels:
+Players can challenge the level created by us. A total of 5 levels are built by us.
+Customize Levels :
+Players can create their own level. After building levels they can play their own design and compete with each other.</p>
+						<p> This project was done as a group project(Myself and Hsi (Nancy) Lin) during the quarantine season for the Alcove VR Competition.</p>
+						<p> Tools used: Unity Editor, C#, Oculus, Photon Unity Networking</p>
 						
+						<p> I worked as the game programmer/network programmer for this project. This is the first time I developed a multiplayer networking game and I started out the networking experience with VR(I should have started with a 2d or FPS game to understand the basics of networking).
+						</p>
+						<p> I got confused on how to sync movement of players and how the camera and controllers can be synced across the network, I took a lot of time in figuring this stuff out and this was a serious challenge for me as I barely knew the basics of Photon and I was trying this in VR!</p>
+						<p> I finally figured out to on how to use the OVR Camera and the controllers for different players(I used the OVRCOntroller in the scene instead of adding it to the player prefab), my next hurdle was to sync non player objects in the scene, this proved out to be difficult to me probably because I got confused on how to use RPC functions and PhotonView component.</p>
+						<p> I figured out a solution by just using PhotonNetwork.Instantiate function and adding a photonview component on to the prefab. Then, I worked on getting the player-UI interaction(button click events) and player-Non player interactions(ball interaction). I also implemented a leaderboard.</p>
+						<p>Overall, this project was an enriching experience for me as I learned a lot about networking, and I made two other networking games(Ninja Multiplayer race and AR Multiplayer) because of this project. It was tough at times to test the project because of the quarantine but that didn't let us down and it was a joyful expereience at the end.</p>
+						<p> The project code will be released after June 18th(the results will be out on that day)</p>
 
 					</div>
 				</section>
@@ -66,7 +77,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/tbdestart.png" alt="Los Angeles" style="width:100%;">
+        <img src="images/modeselection.png" alt="Los Angeles" style="width:100%;">
          <div class="carousel-caption">
           
          
@@ -74,14 +85,14 @@
       </div>
 
       <div class="item">
-        <img src="images/tbdesecond.png" alt="Chicago" style="width:100%;">
+        <img src="images/builtlevel1.png" alt="Chicago" style="width:100%;">
          <div class="carousel-caption">
           
         </div>
       </div>
     
       <div class="item">
-        <img src="images/tbdethird.png" alt="New york" style="width:100%;">
+        <img src="images/builtlevel2.png" alt="New york" style="width:100%;">
          <div class="carousel-caption">
           
         </div>
@@ -89,7 +100,7 @@
     
 
     <div class="item">
-        <img src="images/tbdefourth.png" alt="" style="width:100%;">
+        <img src="images/customlevel2.png" alt="" style="width:100%;">
          <div class="carousel-caption">
           
           
@@ -97,7 +108,7 @@
       </div>
 
       <div class="item">
-        <img src="images/tbdegameover.png" alt="" style="width:100%;">
+        <img src="images/builtLevel3.png" alt="" style="width:100%;">
          <div class="carousel-caption">
           
           
@@ -117,9 +128,6 @@
     </a>
   </div>
   <br>
-						
-						<p> I worked as the game programmer for this project. I implemented the microphone recording mechanic for the game and I also did the level design.
-						</p>
 						
 
 </div>
